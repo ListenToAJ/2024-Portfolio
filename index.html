@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>AJ's Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+  </head>
+
+  <body>
+    <div id="menubar">
+      <div id="startButton">START</div>
+      <div id="divider"></div>
+      <div id="menuIcons">
+        <img id="m1" class="mI" src="img/painting.png" />
+        <!-- <img id="m2" class="mI" src="img/hawaiipizza.png">
+               <img id="m3" class="mI" src="img/cup.png">
+               <img id="m4" class="mI" src="img/lime.png">
+               <img id="m5" class="mI" src="img/mangonada.png">
+               <img id="m6" class="mI" src="img/snug.png">
+               <img id="m7" class="mI" src="img/butterscotch.png"> -->
+      </div>
+      <div id="clock">99:99 PM</div>
+    </div>
+
+    <div id="introWindow" class="window">
+      <div id="introTitle">Welcome to my portfolio!</div>
+      <div id="introTextBlob">
+        My name is Anthony Simao, I am currently a senior at Umass Lowell
+        skilled in C++, Python, and Java, with strong experience in web
+        development. I'm passionate about creating efficient solutions and
+        continuously expanding my technical expertise.
+      </div>
+      <div id="introTutorial">
+        - Clicking on desktop icons will display projects<br />- Some projects
+        have links, others have descriptions<br />- Thank you for visiting!
+      </div>
+      <span>
+         <div class="butt closeButt">Close me!</div>
+      </span>
+    </div>
+
+
+       
+
+    <div class="window projectWindow" id="ranterWindow" style="display: none;">
+      <span class="projectTitle">= Ranter Website =</span>
+      <img src="gif/ranter.gif" class="projectGif" />
+      <div class="projectBody">
+        This web application can simulate both emails and text messages to allow
+        you to feel the satisfaction of sending an angry message without
+        actually sending one! One of my earlier projects, it was creating with
+        HTML, CSS, and JQuery.
+      </div>
+      <div class="buttContainer">
+        <div class="butt" id="introCloseButton">Try me!</div>
+        <div class="butt closeButt">Close me!</div>
+      </div>
+    </div>
+
+    <div class="window projectWindow" id="sudokuWindow" style="display: none;">
+      <span class="projectTitle">= Sudoku Solver =</span>
+      <img src="gif/sudoku.gif" class="projectGif" />
+      <div class="projectBody">
+        This script reads in Sudoku boards through text files, and solves them
+        by checking which grid spots only have a singular solution, and then
+        repeating. Made entirely in Python, it was a lot of fun.
+      </div>
+      <div class="buttContainer">
+        <div class="butt" id="introCloseButton">Try me!</div>
+        <div class="butt closeButt">Close me!</div>
+      </div>
+    </div>
+
+       <div class="window projectWindow" id="chromeWindow" style="display: none;">
+             <span class="projectTitle">= Chrome New Tab =</span>
+             <img src="gif/chrome.gif" class="projectGif" />
+             <div class="projectBody">
+               This Chrome extension overrites my new tab, it has shortcuts to common websites, tab indexing and managment via the Chrome API, as well as fluid and quick animations to boost my productivity, and look good doing it.
+             </div>
+             <div class="buttContainer">
+               <div class="butt closeButt" >Close me!</div>
+             </div>
+           </div>
+
+       <div class="window projectWindow" id="sokobanWindow" style="display: none;">
+             <span class="projectTitle">= Sokoban Game =</span>
+             <img src="gif/sokoban.gif" class="projectGif" />
+             <div class="projectBody">
+               Fully function Sokoban game in C++ using custom tile classes and player entities with consistent win conditions and visually appealing graphics, made with C++ and SFML.
+             </div>
+             <div class="buttContainer">
+               <div class="butt closeButt">Close me!</div>
+             </div>
+           </div>
+
+       <div class="window projectWindow" id="desmosWindow" style="display: none;">
+             <span class="projectTitle">= Desmos Graph =</span>
+             <img src="gif/desmos.gif" class="projectGif" />
+             <div class="projectBody">
+               This application made within the Desmos online graphing calculator uses conditionals and logic to display a dynamic graph of a store's performance versus their target after a simple data entry.
+             </div>
+             <div class="buttContainer">
+               <div class="butt" id="introCloseButton">Try me!</div>
+               <div class="butt closeButt">Close me!</div>
+             </div>
+           </div>
+
+    <div class="container">
+      <div class="iconCover">
+        <div class="icon" id="ranter">
+          <img
+            src="img/ranter.png"
+            class="desktopIconImg"
+            id="ranterImg"
+            alt="Ranter"
+          />
+          <div class="iconLabel">Ranter</div>
+        </div>
+      </div>
+
+      <div class="iconCover">
+        <div class="icon" id="sudoku">
+          <img
+            src="img/sudoku.png"
+            class="desktopIconImg"
+            id="sudokuImg"
+            alt="Sudoku"
+          />
+          <div class="iconLabel">Sudoku Solver</div>
+        </div>
+      </div>
+
+      <div class="iconCover">
+        <div class="icon" id="chrome">
+          <img
+            src="img/chrome.png"
+            class="desktopIconImg"
+            id="chromeImg"
+            alt="ChromeNewTab"
+          />
+          <div class="iconLabel">Chrome<br />New Tab</div>
+        </div>
+      </div>
+
+      <div class="iconCover">
+        <div class="icon" id="algFolder">
+          <img
+            src="img/algFolder.png"
+            class="desktopIconImg"
+            id="algFolderImg"
+            alt="AlgFolder"
+          />
+          <div class="iconLabel">Algor-<br />ithims</div>
+        </div>
+      </div>
+
+      <div class="iconCover">
+        <div class="icon" id="sokoban">
+          <img
+            src="img/sokoban.png"
+            class="desktopIconImg"
+            id="sokobanImg"
+            alt="Sokoban"
+          />
+          <div class="iconLabel">Sokoban</div>
+        </div>
+      </div>
+
+      <div class="iconCover">
+        <div class="icon" id="desmos">
+          <img
+            src="img/desmos.png"
+            class="desktopIconImg"
+            id="desmosIMg"
+            alt="Desmos Graph"
+          />
+          <div class="iconLabel">Desmos Graph</div>
+        </div>
+      </div>
+
+      <div class="iconCover">
+        <div class="icon" id="miscFolder">
+          <img
+            src="img/miscFolder.png"
+            class="desktopIconImg"
+            id="miscFolderImg"
+            alt="MiscFolder"
+          />
+          <div class="iconLabel">Misc.</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
